@@ -11,7 +11,21 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        black: "var(--black)"
       },
+      fontSize: {
+        large:"36px",
+        medium: "24px",
+        small: "16px"
+      },
+      fontFamily: 
+      {
+        robFont: "var(--roboto)" // no html tem que usar o nome robFont, nn o nome da variável de roboto
+      }
+      // screens:
+      // {
+      //   "2lg": "1920px"
+      // }
     },
   },
   plugins: [],
