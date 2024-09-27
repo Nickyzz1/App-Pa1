@@ -8,6 +8,11 @@
   --black: rgb(12 10 9);
   --white: #ffffff;
 }
+
+/* body{
+  background-color: var(--black);
+  color: white;
+} */
 /* 
 @media (prefers-color-scheme: dark) {
   :root {
