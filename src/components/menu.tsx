@@ -1,3 +1,4 @@
+import {ROUTES} from "@/constants/routes"
 import Link from "next/link";
 
 // interface IMenu =
@@ -36,8 +37,8 @@ export const Menu = ({op1, op2, op3, op4} :
     return(
         <>
          <nav className={style.nav}>
-          <p className={style.p} >{op1}</p>
-          <p className={style.p}>{op2}</p>
+          <Link href={ROUTES.home} className={style.p} >{op1}</Link>
+          <Link href={ROUTES.maths} className={style.p}>{op2}</Link>
           <p className={style.p}>{op3}</p>
           <p className={style.p}>{op4}</p>
         </nav>

@@ -10,3 +10,5 @@ c# + angular
 SEO server side
 next = framework
 vite = framework
+
+//td que estiver dentor do app pode ser acessado pel url
