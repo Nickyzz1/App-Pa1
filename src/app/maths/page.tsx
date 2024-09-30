@@ -12,7 +12,12 @@ const Maths: React.FC = () =>{
 
     const style = {
         btn: "bg-blue-950 text-white rounded p-2",
-        form: "flex justify-center"
+        form: "flex items-center justify-center bg-blue-900 flex-col text-white rounded-lg m-4 p-4",
+        center: "flex justify-center m-4",
+        input: "rounded",
+        title: "m-4",
+        label:"m-2",
+        oper: "flex flex-row items-center m-4 gap-4"
 
     }
 
@@ -81,33 +86,30 @@ const Maths: React.FC = () =>{
         <>
             <h1>Use client com controle de estado</h1>
 
-            <div>
+            
 
-            <form className={style.form} action=""/>
-                <label htmlFor="n1">Numero 1</label>
-                <input name="n1" id="n1" type="text" value={number1} onChange={(event) => setNumber1(event.target.value)}/>
-                </div>
-                <div>
-                <label htmlFor="n2">Numero 2</label>
-                <input name="n2" id="n2" type="text" value={number2} onChange={(event) => setNumber2(event.target.value)}/>
-
+        <div className={style.center}>
+            <div className={style.form}>
+                <form action=""/>
+                        <h1 className={style.title}>ESCOLHA UM NÚMERO</h1>
+                            <label className={style.label} htmlFor="n1">Numero 1</label>
+                            <input className={style.input} name="n1" id="n1" type="text" value={number1} onChange={(event) => setNumber1(event.target.value)}/>
+                            <label className={style.label} htmlFor="n2">Numero 2</label>
+                            <input className={style.input} name="n2" id="n2" type="text" value={number2} onChange={(event) => setNumber2(event.target.value)}/>
+            
+                            {/* se é uum numero, se resp existe então nan */}
+                        
+                                <div className={style.oper}>
+                                    <button className={style.btn} onClick={handleSoma}>somar</button>
+                                    <button className={style.btn} onClick={handleSub}>subtrair</button>
+                                    <button className={style.btn} onClick={handleMult}>multiplicar</button>
+                                    <button className={style.btn} onClick={handleDiv}>dividir</button>
+                                </div>
+                          
+                        {/* {!isNaN(resp ?? NaN) ? resp : msgError} */}
+                <form/>
             </div>
-
-            <div>
-                
-                <h2>soma</h2>
-                {/* se é uum numero, se resp existe então nan */}
-                <button className={style.btn} onClick={handleSoma}>somar</button>
-                <h2>subtração</h2>
-                <button className={style.btn} onClick={handleSub}>subtrair</button>
-                 <h2>multiplicaçaõ</h2>
-                <button className={style.btn} onClick={handleMult}>multiplicar</button>
-                 <h2>divisão</h2>
-                <button className={style.btn} onClick={handleDiv}>dividir</button>
-                {/* {!isNaN(resp ?? NaN) ? resp : msgError} */}
-
-            <form/>
-            </div>
+        </div>
         </>
     )
 
