@@ -43,38 +43,41 @@ const GeneralFunction: React.FC = () =>
 
     }
 
+    const style = 
+    {
+        container: "h-screen"
+    }
+
 
     return(
         <>
-            <h1>função reaproveitada</h1>
-            <div>
-                <input type="text" placeholder="numero 01"  value = {numero1} onChange={(e) => setNumero1(e.target.value)}/>
-            </div>
-            <div>
-                <input type="text" placeholder="numero 02" value = {numero2} onChange={(e) => setNumero2(e.target.value)} />
-            </div>
-
-            <div>
-                <button onClick={() => handleAll({a:numero1, b: numero2})} >calcular todos</button>
-            </div>
-
-            <div>
-                <h2>soma</h2>
-                <p>{!isNaN( respSoma?? NaN) ? respSoma: erro }</p>
-            </div>
-
-            <div>
-                <h2>subtração</h2>
-                <p>{!isNaN( respSub?? NaN) ? respSub: erro }</p>
-            </div>
-
-            <div>
-                <h2>Multiplicação</h2>
-                <p>{!isNaN( respMult?? NaN) ? respMult: erro }</p>
-            </div>
-            <div>
-                <h2>divisão</h2>
-                <p>{!isNaN( respDiv?? NaN) ? respDiv?.toFixed(1): erro }</p>
+            <div className={style.container} >
+                <h1>função reaproveitada</h1>
+                <div>
+                    <input type="text" placeholder="numero 01"  value = {numero1} onChange={(e) => setNumero1(e.target.value)}/>
+                </div>
+                <div>
+                    <input type="text" placeholder="numero 02" value = {numero2} onChange={(e) => setNumero2(e.target.value)} />
+                </div>
+                <div>
+                    <button onClick={() => handleAll({a:numero1, b: numero2})} >calcular todos</button>
+                </div>
+                <div>
+                    <h2>soma</h2>
+                    <p>{!isNaN( respSoma?? NaN) ? respSoma: erro }</p>
+                </div>
+                <div>
+                    <h2>subtração</h2>
+                    <p>{!isNaN( respSub?? NaN) ? respSub: erro }</p>
+                </div>
+                <div>
+                    <h2>Multiplicação</h2>
+                    <p>{!isNaN( respMult?? NaN) ? respMult: erro }</p>
+                </div>
+                <div>
+                    <h2>divisão</h2>
+                    <p>{!isNaN( respDiv?? NaN) ? respDiv?.toFixed(1): erro }</p>
+                </div>
             </div>
 
         </>
