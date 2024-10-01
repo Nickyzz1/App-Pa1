@@ -5,7 +5,7 @@ const paginaBonita = () =>
 
     const style = 
     {
-        body: " flex justify-center flex-col items-center bg-black h-screen text-white bg-gradient-to-r from-slate-950 to-slate-800"
+        body: " flex flex-row justify-center items-center bg-black h-screen text-white bg-gradient-to-r from-slate-950 to-slate-800"
     }
 
     return(
@@ -14,7 +14,7 @@ const paginaBonita = () =>
         <div className={style.body}>
        
         <Card/>
-        
+
         </div>
         </>
     );
