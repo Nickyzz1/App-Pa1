@@ -12,10 +12,10 @@ const Maths: React.FC = () =>{
 
     const style = {
         btn: "bg-blue-950 text-white rounded p-2",
-        form: "flex items-center justify-center bg-blue-900 flex-col text-white rounded-lg m-4 p-4",
-        center: "flex justify-center m-4",
+        form: "w-full h-64 flex items-center justify-center bg-blue-900 flex-col text-white rounded-lg m-4 p-4",
+        center: "h-screen flex justify-center",
         input: "rounded",
-        title: "m-4",
+        title: "",
         label:"m-2",
         oper: "flex flex-row items-center m-4 gap-4"
 

@@ -13,6 +13,10 @@ const nextConfig = {
                 source: "/matematicas",
                 destination: "/maths"
             },
+            {
+                source: "/funcao-reaproveitada",
+                destination: "/general-function"
+            },
         ]
     }
 };

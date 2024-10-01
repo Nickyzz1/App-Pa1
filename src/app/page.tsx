@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
 
-    <div className="h-screen">
+    <div className="h-screen ">
     <h1>Bem vindo!</h1>
 
     <Form/>

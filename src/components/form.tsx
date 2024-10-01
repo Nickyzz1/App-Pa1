@@ -5,8 +5,8 @@ export const Form = () =>{
     const style = 
     {
     content:" self-center text-white bg-cyan-800 gap-3 p-3 font-robFont flex justify-center align-center flex-col m-40 rounded-2xl p-8 items-center shadow-2xl",
-    input: "rounded p-2 w-full",
-    btn: "bg-blue-500 w-64 p-4 rounded hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:bg-cyan-500focus:ring-opacity-50 mt-8 ease-in"
+    input: " flex rounded p-2 w-full",
+    btn: "flex bg-blue-500 w-64 p-4 rounded hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:bg-cyan-500focus:ring-opacity-50 mt-8 ease-in"
     }
     return(
         <>

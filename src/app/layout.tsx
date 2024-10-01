@@ -6,7 +6,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import {Menu} from '@/components/menu'
 import {Footer} from '@/components/footer'
-import {Form} from '@/components/form'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -42,7 +41,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
       >
-       <Menu op1="dudu" op2 ='kau' op3={false} op4 = {2} />
+       <Menu op1="home" op2 ='maths' op3="pagina nova"/>
         {children}
       {<Footer op1="nos contate:" op2= "41999999999"/> }
       </body>

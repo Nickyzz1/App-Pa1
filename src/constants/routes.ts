@@ -1,5 +1,5 @@
-export enum ROUTES 
-{
+export enum ROUTES {
     home = "/",
-    maths = "/maths"
+    maths = "/maths",
+    generalFunction = "/funcao-reaproveitada"
 }
