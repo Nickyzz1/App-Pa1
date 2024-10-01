@@ -22,7 +22,7 @@ export const Card = () =>
     ]
     const style = 
     {
-        container: "text-center flex flex-col wrap bg-white h-auto m-2 w-80 text-black h-auto rounded-xl shadow shadow-[0_0px_60px_-15px_rgba(0,0,0)] overflow-hidden object-cover hover:scale-[1.3] ease-linear",
+        container: "text-center flex flex-col wrap bg-white h-auto m-2 w-80 text-black h-auto rounded-xl shadow shadow-[0_0px_60px_-15px_rgba(0,0,0)] overflow-hidden object-cover hover:scale-[1.3] ease-linear duration-200",
         titles: "mt-2",
         p: "m-4",
         pFooter: "text-white flex flex-col text-center m-2 mx-6",
