@@ -1,5 +1,5 @@
 // import dos modulos
-import {Roboto} from "next/font/google"
+import {Comic_Neue} from "next/font/google"
 import localFont from "next/font/local";
 
 //imports internos
@@ -17,11 +17,20 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-const roboto = Roboto(
+// const roboto = Roboto(
+//   {
+//     weight: ["100", "400", "900"],
+//     style: "normal",
+//     variable: "--roboto",
+//     subsets: ["latin"]
+//   }
+// )
+
+const comic = Comic_Neue(
   {
-    weight: ["100", "400", "900"],
+    weight: ["300", "400", "700"],
     style: "normal",
-    variable: "--roboto",
+    variable: "--comic",
     subsets: ["latin"]
   }
 )
@@ -39,8 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
-      >
+        className={`${comic.variable} antialiased font-comic`}>
        <Menu op1="home" op2 ='maths' op3="calculator" op4="pagina bonita"/>
         {children}
       {<Footer op1="nos contate:" op2= "41999999999"/> }

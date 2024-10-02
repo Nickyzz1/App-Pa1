@@ -11,10 +11,10 @@ import React, {useState} from "react"
 const Maths: React.FC = () =>{
 
     const style = {
-        btn: "bg-blue-950 text-white rounded p-2",
-        form: "w-full h-64 flex items-center justify-center bg-blue-900 flex-col text-white rounded-lg m-4 p-4",
-        center: "h-screen flex justify-center",
-        input: "rounded",
+        btn: "bg-indigo-950 text-white rounded p-2 hover:bg-indigo-700",
+        form: "w-2/4 h-auto flex items-center justify-center bg-indigo-800 flex-col text-white rounded-lg p-4",
+        center: "h-screen flex justify-center items-center",
+        input: "rounded p-4 text-black",
         title: "",
         label:"m-2",
         oper: "flex flex-row items-center m-4 gap-4"
@@ -25,7 +25,7 @@ const Maths: React.FC = () =>{
     const [number1, setNumber1] = useState<string>("");
     const [resp, setResp] = useState<number | undefined >();
     
-    const msgError= "digite um número válido"
+    const msgError= "Digite um número válido"
  
     const handleSoma = () => 
     {
@@ -90,7 +90,6 @@ const Maths: React.FC = () =>{
 
         <div className={style.center}>
             <div className={style.form}>
-                <form action=""/>
                         <h1 className={style.title}>ESCOLHA UM NÚMERO</h1>
                             <label className={style.label} htmlFor="n1">Numero 1</label>
                             <input className={style.input} name="n1" id="n1" type="text" value={number1} onChange={(event) => setNumber1(event.target.value)}/>
@@ -105,9 +104,8 @@ const Maths: React.FC = () =>{
                                     <button className={style.btn} onClick={handleMult}>multiplicar</button>
                                     <button className={style.btn} onClick={handleDiv}>dividir</button>
                                 </div>
-                          
-                        {/* {!isNaN(resp ?? NaN) ? resp : msgError} */}
-                <form/>
+                                <h1>Resposta</h1>
+                                  <div className="bg-indigo-950 p-2 rounded">{!isNaN(resp ?? NaN) ? resp : msgError}</div>
             </div>
         </div>
         </>

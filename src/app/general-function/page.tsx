@@ -45,38 +45,49 @@ const GeneralFunction: React.FC = () =>
 
     const style = 
     {
-        container: "h-screen"
+        container: "flex flex-col h-screen justify-center items-center",
+        box: "flex flex-col justify-center items-center bg-indigo-950 text-white w-2/4 h-2/4 rounded-lg",
+        input: "rounded m-4 p-4 text-black",
+        btn: "bg-indigo-900 m-2 p-4 rounded hover:bg-indigo-700 focus"
     }
+
+    
 
 
     return(
         <>
             <div className={style.container} >
-                <h1>função reaproveitada</h1>
-                <div>
-                    <input type="text" placeholder="numero 01"  value = {numero1} onChange={(e) => setNumero1(e.target.value)}/>
-                </div>
-                <div>
-                    <input type="text" placeholder="numero 02" value = {numero2} onChange={(e) => setNumero2(e.target.value)} />
-                </div>
-                <div>
-                    <button onClick={() => handleAll({a:numero1, b: numero2})} >calcular todos</button>
-                </div>
-                <div>
-                    <h2>soma</h2>
-                    <p>{!isNaN( respSoma?? NaN) ? respSoma: erro }</p>
-                </div>
-                <div>
-                    <h2>subtração</h2>
-                    <p>{!isNaN( respSub?? NaN) ? respSub: erro }</p>
-                </div>
-                <div>
-                    <h2>Multiplicação</h2>
-                    <p>{!isNaN( respMult?? NaN) ? respMult: erro }</p>
-                </div>
-                <div>
-                    <h2>divisão</h2>
-                    <p>{!isNaN( respDiv?? NaN) ? respDiv?.toFixed(1): erro }</p>
+                <div className={style.box}>
+                    <h1>Função reaproveitada</h1>
+                    <div>
+                        <input className={style.input} type="text" placeholder="numero 01"  value = {numero1} onChange={(e) => setNumero1(e.target.value)}/>
+                    </div>
+                    <div>
+                        <input className={style.input} type="text" placeholder="numero 02" value = {numero2} onChange={(e) => setNumero2(e.target.value)} />
+                    </div>
+                    <div>
+                        <button className={style.btn} onClick={() => handleAll({a:numero1, b: numero2})} >calcular todos</button>
+                    </div>
+                    <div>
+                        <h2>Resultado da Soma</h2>
+                        <p>{(numero1.trim() !== "" && numero2.trim() !== "" && !isNaN(respSoma ?? NaN)) ? respSoma : (numero1.trim() === "" || numero2.trim() === "" ? "" : erro)}</p>
+
+                    </div>
+                    <div>
+                        <h2>Resultado da Subtração</h2>
+                        <p>{(numero1.trim() !== "" && numero2.trim() !== "" && !isNaN(respSub ?? NaN)) ? respSub : (numero1.trim() === "" || numero2.trim() === "" ? "" : erro)}</p>
+
+                        {/* {!isNaN( respSub?? NaN) ? respSub: erro } o ? verifica se o campo é um numero ou é undefined, se foir undefined retornsn Nan caso contario é verdadeiro */}
+                    </div>
+                    <div>
+                        <h2>Resultado da Multiplicação</h2>
+                        <p>{(numero1.trim() !== "" && numero2.trim() !== "" && !isNaN(respMult ?? NaN)) ? respMult : (numero1.trim() === "" || numero2.trim() === "" ? "" : erro)}</p>
+                    </div>
+                    <div>
+                        <h2>Resultado da Divisão</h2>
+                        <p>{(numero1.trim() !== "" && numero2.trim() !== "" && !isNaN(respDiv ?? NaN)) ? respDiv : (numero1.trim() === "" || numero2.trim() === "" ? "" : erro)}</p>
+
+                    </div>
                 </div>
             </div>
 

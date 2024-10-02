@@ -30,8 +30,8 @@ export const Menu = ({op1, op2, op3, op4} :
 ) =>{
     const style = 
     {
-    p:"text-white bg-cyan-700 ",
-    nav:"text-white bg-cyan-800 gap-3 p-3 font-robFont text-large flex flex-row justify-center align-center"
+    p:"text-white bg-cyan-700 p-2 rounded hover:bg-cyan-600",
+    nav:"text-white bg-cyan-800 gap-3 p-3 text-large flex flex-row justify-center align-cente font-comic"
     }
 
     return(

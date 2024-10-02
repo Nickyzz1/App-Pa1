@@ -20,7 +20,8 @@ const config: Config = {
       },
       fontFamily: 
       {
-        robFont: "var(--roboto)" // no html tem que usar o nome robFont, nn o nome da variável de roboto
+        robFont: "var(--roboto)",
+        comic : "var(--comic)" // no html tem que usar o nome robFont, nn o nome da variável de roboto
       }
       // screens:
       // {

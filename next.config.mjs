@@ -14,8 +14,8 @@ const nextConfig = {
                 destination: "/maths"
             },
             {
-                source: "/funcao-reaproveitada",
-                destination: "/general-function"
+                source: "/funcao-reaproveitada", //nome que vai aparecer na url
+                destination: "/general-function" //nome da pasta de destino identica
             },
             {
                 source: "/paginaBonita",
