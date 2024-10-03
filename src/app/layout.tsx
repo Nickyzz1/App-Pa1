@@ -49,7 +49,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${comic.variable} antialiased font-comic`}>
-       <Menu op1="home" op2 ='maths' op3="calculator" op4="pagina bonita"/>
+       <Menu op1="home" op2 ='maths' op3="calculator" op4="pagina bonita" op5="EasterEgg"/>
         {children}
       {<Footer op1="nos contate:" op2= "41999999999"/> }
       </body>

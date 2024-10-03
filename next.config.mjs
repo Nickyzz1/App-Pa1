@@ -21,6 +21,10 @@ const nextConfig = {
                 source: "/paginaBonita",
                 destination: "/paginaBonita"
             },
+            {
+                source: "/easterEgg",
+                destination: "/easterEgg"
+            },
         ]
     }
 };
