@@ -4,6 +4,7 @@ import festa from "../app/assets/img/festa.jpg"
 import guittar from "../app/assets/img/guittar.jpg"
 import vinil from "../app/assets/img/vinil.jpg"
 import { Tilt } from 'react-tilt'
+import { useState } from 'react';
 
 const defaultOptions = {
 	reverse:        false,  // reverse the tilt direction
@@ -19,6 +20,7 @@ const defaultOptions = {
 
 export const Card = () => 
 {
+     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     const dados : {imagem: StaticImageData; titulo: string }[] = [
 
         {
@@ -37,7 +39,7 @@ export const Card = () =>
     const style = 
     {
         box: "flex flex-wrap items-center justify-center",
-        container: "text-center flex flex-wrap flex-col bg-white h-auto m-2 w-80 text-black h-auto rounded-xl shadow shadow-[0_0px_60px_-15px_rgba(0,0,0)] overflow-hidden object-cover hover:scale-[1.3] ease-linear duration-200 cursor-grab",
+        container: "text-center flex flex-wrap flex-col bg-white h-auto m-2 w-80 text-black h-auto rounded-xl shadow shadow-[0_0px_60px_-15px_rgba(0,0,0)] overflow-hidden object-cover hover:scale-[1.3] ease-linear duration-200 z-50 cursor-grab hover:z-50",
         titles: "mt-2",
         p: "m-4",
         pFooter: "text-white flex flex-col text-center m-2 mx-6",
@@ -52,7 +54,13 @@ export const Card = () =>
 
         {dados.map((item, index) =>  (
 
-        <Tilt options={defaultOptions} style={style.tilt}>
+        <Tilt   
+        options={defaultOptions}  
+        key={index} 
+        onMouseEnter={() => setHoveredIndex(index)} // Define o índice do card quando o mouse entra
+        onMouseLeave={() => setHoveredIndex(null)} // Reseta o índice quando o mouse sai
+      >
+
             <div className={style.box} key={index}>
             <div className={style.container}>
             <Image className="max-h-40 object-cover" src={item.imagem} alt=""/>

@@ -11,8 +11,8 @@ import React, {useState} from "react"
 const Maths: React.FC = () =>{
 
     const style = {
-        btn: "bg-indigo-950 text-white rounded p-2 hover:bg-indigo-700",
-        form: "w-auto h-auto flex flex-wrap items-center justify-center bg-indigo-800 flex-col text-white rounded-lg p-4",
+        btn: "bg-indigo-950 text-white rounded p-2 hover:bg-indigo-700 shadow-[0_5px_2px_2px_rgba(255,255,255,0.3)]",
+        form: "w-auto h-auto flex flex-wrap items-center justify-center bg-indigo-800 flex-col text-white rounded-lg p-4 shadow-[0_5px_20px_-2px_rgba(255,255,255,0.3)]",
         center: "flex-wrap h-screen flex justify-center items-center",
         input: "flex-wrap rounded p-4 text-black w-auto",
         title: "",
@@ -105,7 +105,7 @@ const Maths: React.FC = () =>{
                                         <button className={style.btn} onClick={handleDiv}>dividir</button>
                                     </div>
                                     <h1>Resposta</h1>
-                                      <div className="bg-indigo-950 p-2 rounded">{!isNaN(resp ?? NaN) ? resp : msgError}</div>
+                                      <div className="bg-indigo-950 p-2 rounded  shadow-[0_5px_2px_2px_rgba(255,255,255,0.3)] m-4">{!isNaN(resp ?? NaN) ? resp : msgError}</div>
                 </div>
                         </div>
             </div>
