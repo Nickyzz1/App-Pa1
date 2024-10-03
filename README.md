@@ -11,4 +11,6 @@ SEO server side
 next = framework
 vite = framework
 
+https://michalsnik.github.io/aos/
+
 //td que estiver dentor do app pode ser acessado pel url

@@ -49,7 +49,7 @@ const GeneralFunction: React.FC = () =>
     const style = 
     {
         container: "flex flex-col h-screen justify-center items-center bg-gradient-to-r from-slate-950 to-slate-800 ",
-        box: "flex flex-col handle justify-center items-center bg-indigo-950 text-white w-auto h-auto p-6 rounded-lg shadow-[0_5px_20px_-2px_rgba(255,255,255,0.3)]",
+        box: "flex flex-col handle justify-center items-center bg-indigo-950 text-white w-auto h-auto p-6 rounded-lg shadow-[0_5px_20px_-2px_rgba(255,255,255,0.3)] cursor-grab",
         input: "rounded m-4 p-4 text-black",
         btn: "bg-indigo-900 m-4 p-4 rounded hover:bg-indigo-700 focus shadow-[0_5px_2px_2px_rgba(255,255,255,0.3)]"
     }

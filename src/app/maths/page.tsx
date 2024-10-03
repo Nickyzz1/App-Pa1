@@ -28,7 +28,7 @@ const Maths: React.FC = () =>{
     // 0 0px 218px 184px rgba(255,255,255,0.0201)
 
     const style = {
-        form: "w-auto h-auto flex flex-wrap items-center justify-center bg-gradient-to-r from-cyan-950 to-cyan-700  flex-col text-white rounded-lg p-4 shadow-[0_2px_100px_20px_rgba(255,255,255,0.1)]",
+        form: "w-auto h-auto flex flex-wrap items-center justify-center bg-gradient-to-r from-cyan-950 to-cyan-700  flex-col text-white rounded-lg p-4 shadow-[0_2px_100px_20px_rgba(255,255,255,0.1)] cursor-grab",
         btn: "bg-cyan-950 text-white rounded p-2 hover:bg-cyan-700 shadow-[0_5px_2px_2px_rgba(255,255,255,0.3)]",
         center: "flex-wrap h-screen flex justify-center items-center",
         input: "flex-wrap rounded p-4 text-black w-auto",
