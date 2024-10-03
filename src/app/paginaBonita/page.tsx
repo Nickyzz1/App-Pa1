@@ -5,7 +5,7 @@ const paginaBonita = () =>
 
     const style = 
     {
-        body: " flex flex-row justify-center items-center bg-black h-screen text-white bg-gradient-to-r from-slate-950 to-slate-800"
+        body: "text-white bg-gradient-to-r from-slate-950 to-slate-800 flex flex-wrap flex-row w-screen min-h-screen h-auto justify-center items-center "
     }
 
     return(

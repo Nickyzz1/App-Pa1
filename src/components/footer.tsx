@@ -8,7 +8,7 @@ export const Footer = ({op1, op2} : { op1: string; op2: string; }
 
     const style = 
     {
-    container:"bg-cyan-800 bottom-0 w-screen ",
+    container:"text-white bg-cyan-800 bottom-0 w-screen ",
     }
 
     return(

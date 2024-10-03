@@ -31,7 +31,7 @@ export const Menu = ({op1, op2, op3, op4} :
     const style = 
     {
     p:"text-white bg-cyan-700 p-2 rounded hover:bg-cyan-600",
-    nav:"text-white bg-cyan-800 gap-3 p-3 text-large flex flex-row justify-center align-cente font-comic"
+    nav:"flex flex-wrap text-white bg-cyan-800 gap-3 p-3 text-large flex-row justify-center align-center font-comic"
     }
 
     return(

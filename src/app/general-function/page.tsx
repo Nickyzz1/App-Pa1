@@ -45,8 +45,8 @@ const GeneralFunction: React.FC = () =>
 
     const style = 
     {
-        container: "flex flex-col h-screen justify-center items-center",
-        box: "flex flex-col justify-center items-center bg-indigo-950 text-white w-2/4 h-2/4 rounded-lg",
+        container: "flex flex-col h-screen justify-center items-center bg-gradient-to-r from-slate-950 to-slate-800 ",
+        box: "flex flex-col justify-center items-center bg-indigo-950 text-white w-2/4 h-2/4 rounded-lg shadow-[0_5px_20px_-2px_rgba(255,255,255,0.3)]",
         input: "rounded m-4 p-4 text-black",
         btn: "bg-indigo-900 m-2 p-4 rounded hover:bg-indigo-700 focus"
     }
@@ -58,7 +58,7 @@ const GeneralFunction: React.FC = () =>
         <>
             <div className={style.container} >
                 <div className={style.box}>
-                    <h1>Função reaproveitada</h1>
+                    <h1 className="text-2xl">Função reaproveitada</h1>
                     <div>
                         <input className={style.input} type="text" placeholder="numero 01"  value = {numero1} onChange={(e) => setNumero1(e.target.value)}/>
                     </div>
