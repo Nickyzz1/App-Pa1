@@ -25,8 +25,8 @@ const ServerSide = async () =>{
 
     return(
         <>
-        <div className="h-screen">
-            <h1>Server Side Redering</h1>
+        <div className="h-screen text-center">
+            <h1 className="m-4">Server Side Redering</h1>
             <Suspense fallback = { <div> Loading..</div>}>
             <div className={style.container}>
                 {data.results.map((item, index) => {
