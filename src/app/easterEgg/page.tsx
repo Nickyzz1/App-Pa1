@@ -8,7 +8,7 @@ const EasterEgg = () => {
     const style = {
         bg: "bg-gradient-to-r from-slate-950 to-slate-800 min-h-screen overflow-y-auto",
         container: "flex flex-col mt-12 m-8",
-        modal: "fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-black bg-opacity-50",
+        modal: "fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-black bg-opacity-100",
         modalContent: "w-96 bg-gradient-to-t from-orange-200 to-orange-400 p-4 rounded-xl shadow-[0_2px_30px_18px_rgba(255,255,255,0.1)]"
     };
 
