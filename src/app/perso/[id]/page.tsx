@@ -30,7 +30,7 @@ const Perso = async({params: {id}} : IPerso) =>
     {
         container: "flex flex-wrap justify-center",
         box: "flex flex-col flex-wrap bg-cyan-700 text-white object-cover overflow-hiden rounded p-8 m-4",
-        img: "h-auto w-[460px] rounded object-cover"
+        img: "h-auto mt-6 w-[460px] rounded object-cover"
     }
     //o seo coloca a página que ele lê primeiro no google, se o cliente quer aparecer primeiro tem qwue ter otimização
 
@@ -42,9 +42,12 @@ const Perso = async({params: {id}} : IPerso) =>
                         <h1>ID: {data.id}</h1>
                         <p>Name: {data.name}</p>
                     </div>
+
                     <p className="flex self-center gap-6">Status: {data.status}</p>
                     <p className="flex self-center gap-6">Specie: {data.species}</p>
+
                     <Image className={style.img} src={data.image} alt="Photo" width={200} height={200} priority></Image>
+
                 </div>
             </div>
         </div>
