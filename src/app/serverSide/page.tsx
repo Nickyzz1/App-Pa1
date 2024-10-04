@@ -17,20 +17,27 @@ const ServerSide = async () =>{
     const data: IData = await res.json()
     console.log(data)
 
+    const style = {
+        container:"flex flex-wrap justify-center items-center gap-3",
+        box: "flex flex-wrap flex-col bg-cyan-700 text-white h-auto w-60 p-4 rounded-lg text-center",
+        btn: "bg-cyan-900 p-2 rounded hover:bg-cyan-600"
+    }
+
     return(
         <>
         <div className="h-screen">
             <h1>Server Side Redering</h1>
             <Suspense fallback = { <div> Loading..</div>}>
-            {data.results.map((item, index) => {
-                return(
-                    <div key={item.id}>
-                        <h2>{item.name}</h2>
-                        {/* <p>{item.status}</p> */}
-                        <Link href={`/perso/${item.id}`}>ABRIR</Link>
-                    </div>
-                )
-            })}
+            <div className={style.container}>
+                {data.results.map((item, index) => {
+                    return(
+                        <div key={item.id} className={style.box}>
+                            <h2 className="m-2">{item.name}</h2>
+                            <Link href={`/perso/${item.id}`} className={style.btn}>ABRIR</Link>
+                        </div>
+                    )
+                })}
+            </div>
             </Suspense>
         </div>
         </>
