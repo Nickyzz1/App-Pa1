@@ -13,4 +13,6 @@ vite = framework
 
 https://michalsnik.github.io/aos/
 
+npm install --save-dev @types/aos
+
 //td que estiver dentor do app pode ser acessado pel url
