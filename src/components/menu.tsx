@@ -17,13 +17,16 @@ import Link from "next/link";
 // }
 
 
-export const Menu = ({op1, op2, op3, op4, op5} : 
+export const Menu = ({op1, op2, op3, op4, op5, op6, op7, op8} : 
 {
     op1: string;
     op2: string;
     op3: string;
     op4: string;
     op5: string;
+    op6: string;
+    op7: string;
+    op8: string;
 }
 
 // a ? quer dizer argumento opcoional, pessimo para performance
@@ -43,6 +46,9 @@ export const Menu = ({op1, op2, op3, op4, op5} :
           <Link className={style.p} href={ROUTES.generalFunction}>{op3}</Link>
           <Link className={style.p} href={ROUTES.paginaBonita}>{op4}</Link>
           <Link className={style.p} href={ROUTES.easteregg}>{op5}</Link>
+          <Link className={style.p} href={ROUTES.paginaFetch}>{op6}</Link>
+          <Link className={style.p} href={ROUTES.axiosPage}>{op7}</Link>
+          <Link className={style.p} href={ROUTES.serverPage}>{op8}</Link>
         </nav>
         </>
     );

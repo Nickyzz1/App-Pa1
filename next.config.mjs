@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 
+    images:
+    {
+        remotePatterns: [
+            {protocol: "https", 
+            hostname: "rickandmortyapi.com"}]
+    },
+
     rewrites: () => 
     { // / retona um arr de obj
         return [
@@ -24,6 +31,18 @@ const nextConfig = {
             {
                 source: "/easterEgg",
                 destination: "/easterEgg"
+            },
+            {
+                source: "/pagina-com-fetch",
+                destination: "/paginaFetch"
+            },
+            {
+                source: "/pagina-com-axios",
+                destination: "/paginaAxios"
+            },
+            {
+                source: "/pagina-server-side",
+                destination: "/serverSide"
             },
         ]
     }
