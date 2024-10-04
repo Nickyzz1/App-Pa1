@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const easterEgg = () => {
     const style = {
-        container: "flex flex-col min-h-screen overflow-y-auto",
+        container: "flex flex-col min-h-screen overflow-y-auto mt-20",
     };
 
     useEffect(() => {
@@ -50,7 +50,7 @@ const easterEgg = () => {
             </div> */}
 
             <div className={style.container }>
-                <div className="w-96 bg-orange-200 self-start m-2 p-4  rounded-xl"data-aos="fade-up"
+                <div className="w-96 bg-gradient-to-r from-orange-200 to-orange-300 self-start m-2 p-4  rounded-xl"data-aos="fade-up"
      data-aos-anchor-placement="center-center"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <h1>Quadrado 1</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, cumque? Odio delectus obcaecati ut error eum facere molestias accusantium quos voluptatum maxime. Omnis maiores tenetur nemo accusantium eum. Possimus, architecto.</p>
