@@ -40,11 +40,17 @@ export const Card = () =>
     const style = 
     {
         box: "flex flex-wrap items-center justify-center",
+
         container: "text-center flex flex-wrap flex-col bg-white h-auto m-2 w-80 text-black h-auto rounded-xl shadow shadow-[0_10px_33px_1px_rgba(255,255,255,0.1)] overflow-hidden object-cover hover:scale-[1.3] ease-linear duration-200 z-50 cursor-grab hover:z-50",
+
         titles: "mt-2",
+
         p: "m-4",
+
         pFooter: "text-white flex flex-col text-center m-2 mx-6",
+
         footer: "bottom-0 bg-orange-600 flex flex-row h-20 justify-between items-center justify-center",
+        
         tilt: "height: 250, width: 250"
        
     }

@@ -29,7 +29,7 @@ const Perso = async({params: {id}} : IPerso) =>
     const style =
     {
         container: "flex flex-wrap justify-center",
-        box: "flex flex-col flex-wrap bg-cyan-700 text-white object-cover overflow-hiden rounded p-8 m-4",
+        box: "flex flex-col flex-wrap bg-cyan-700 text-white object-cover overflow-hiden rounded p-8 m-4 shadow-[0_10px_33px_1px_rgba(255,255,255,0.1)]",
         img: "h-auto mt-6 w-[460px] rounded object-cover"
     }
     //o seo coloca a página que ele lê primeiro no google, se o cliente quer aparecer primeiro tem qwue ter otimização
